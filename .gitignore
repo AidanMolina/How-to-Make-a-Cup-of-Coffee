@@ -2,6 +2,8 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
+/How to Make a Cup of Coffee/Library
+/How to Make a Cup of Coffee/Temp
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
