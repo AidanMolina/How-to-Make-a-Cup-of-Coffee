@@ -29,7 +29,9 @@ public class FridgeInteractable : MonoBehaviour
     }
 
     void OnMouseDown(){
-        StartCoroutine(loop.GetComponent<Loop>().InteractableSelected(gameObject));
+        fridge.transform.Rotate(0f, 90f, 0f);
+        fridge.transform.position += new Vector3(1f, 0f, -0.8f);
         label.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+        StartCoroutine(loop.GetComponent<Loop>().InteractableSelected(gameObject));
     }
 }

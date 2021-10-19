@@ -58,9 +58,6 @@ public class Loop : MonoBehaviour
         if(dialogueCounter <= 14){
             dialogueCounter += 1;
         }
-        if(dialogueCounter == 15){
-            SceneManager.LoadScene(0);
-        }
         if(currentCounter <= 13){
             currentCounter += 1;
         }
@@ -72,5 +69,9 @@ public class Loop : MonoBehaviour
         currentCollider.enabled = !currentCollider.enabled;
 
         interactable.SetActive(false);
+
+        if(dialogueCounter == 15){
+            SceneManager.LoadScene(0);
+        }
     }
 }

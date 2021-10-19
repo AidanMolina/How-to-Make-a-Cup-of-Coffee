@@ -28,7 +28,7 @@ public class Interactable : MonoBehaviour
     }
 
     void OnMouseDown(){
-        StartCoroutine(loop.GetComponent<Loop>().InteractableSelected(gameObject));
         label.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+        StartCoroutine(loop.GetComponent<Loop>().InteractableSelected(gameObject));
     }
 }

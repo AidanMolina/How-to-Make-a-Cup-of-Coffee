@@ -31,7 +31,7 @@ public class DoorInteractable : MonoBehaviour
     void OnMouseDown(){
         door.transform.Rotate(0f, -15f, 0f);
         door.transform.position += new Vector3(0f, 0f, -0.2f);
-        StartCoroutine(loop.GetComponent<Loop>().InteractableSelected(gameObject));
         label.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+        StartCoroutine(loop.GetComponent<Loop>().InteractableSelected(gameObject));
     }
 }
