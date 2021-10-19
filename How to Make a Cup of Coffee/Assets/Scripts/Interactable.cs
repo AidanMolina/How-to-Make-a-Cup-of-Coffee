@@ -6,17 +6,21 @@ public class Interactable : MonoBehaviour
 {
     [SerializeField] GameObject label;
     [SerializeField] GameObject loop;
+    [SerializeField] GameObject player;
+
+    Transform target;
 
     // Start is called before the first frame update
     void Start()
     {
         label.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+        target = player.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        transform.LookAt(target);
     }
 
     void OnMouseEnter(){
