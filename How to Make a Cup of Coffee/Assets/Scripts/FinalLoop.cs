@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Loop : MonoBehaviour
+public class FinalLoop : MonoBehaviour
 {
     string[] Dialogue;
     [SerializeField] GameObject Directions;
@@ -23,22 +22,9 @@ public class Loop : MonoBehaviour
         interactableContainer = gameObject.transform.GetChild(0).gameObject;
         dialogueCounter = 0;
         currentCounter = 0;
-        Dialogue = new string[]{"Grab a Coffee Filter", //0
-                    "Put Coffee Filter in Coffee Maker", //1
-                    "Grab Coffee Grounds", //2
-                    "Put Coffee Grounds in Coffee Maker", //3
-                    "Grab Water", //4
-                    "Put Water in Coffee Maker", //5
-                    "Turn on Coffee Maker", //6
-                    "Grab Coffee Pot", //7
-                    "Pour Coffee into Mug", //8
-                    "Grab Creamer", //9
-                    "Put Creamer in Mug", //10
-                    "Grab Sugar", //11
-                    "Put Sugar in Mug", //12
-                    "Stir", //13
-                    "Leave Room With Coffee", //14
-                    "Left" //15
+        Dialogue = new string[]{"Bring me my coffee", //0
+                                "Oh thanks bro!", //1
+                                "Want to see this game I've been making?" //2
         };
 
         Directions.GetComponent<TMPro.TextMeshProUGUI>().text = Dialogue[dialogueCounter];
@@ -57,10 +43,10 @@ public class Loop : MonoBehaviour
     public IEnumerator InteractableSelected(GameObject interactable){
         yield return new WaitForEndOfFrame();
 
-        if(dialogueCounter <= 14){
+        if(dialogueCounter <= 2){
             dialogueCounter += 1;
         }
-        if(currentCounter <= 13){
+        if(currentCounter <= 1){
             currentCounter += 1;
         }
 
@@ -71,9 +57,5 @@ public class Loop : MonoBehaviour
         currentCollider.enabled = !currentCollider.enabled;
 
         interactable.SetActive(false);
-
-        if(dialogueCounter == 15){
-            SceneManager.LoadScene(levelNumber);
-        }
     }
 }
