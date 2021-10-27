@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Global
+public class lastloop : MonoBehaviour
 {
-    
-
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +14,5 @@ public class Global
     void Update()
     {
         
-    }
-
-    void nextLevel(){
-
     }
 }

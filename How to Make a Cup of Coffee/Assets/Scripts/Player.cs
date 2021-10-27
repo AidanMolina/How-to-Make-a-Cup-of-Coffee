@@ -22,7 +22,6 @@ public class Player : MonoBehaviour
     {
         Movement();
         Aim();
-        Debug.Log(transform.position);
     }
 
     void Aim(){
