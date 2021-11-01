@@ -47,7 +47,7 @@ public class FinalLoop : MonoBehaviour
     void Update()
     {
         if(dialogueCounter >= 3){
-            player.transform.position = new Vector3(0f, -20f, 0f);
+            player.transform.position = new Vector3(0.757f, 0.949f, -11.897f);
             secondCamera = Camera.main;
             mainCamera.enabled = false;
             moveCamera();

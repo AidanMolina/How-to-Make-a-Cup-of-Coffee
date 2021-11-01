@@ -3231,6 +3231,9 @@ GameObject:
   - component: {fileID: 1121122384}
   - component: {fileID: 1121122387}
   - component: {fileID: 1121122386}
+  - component: {fileID: 1121122389}
+  - component: {fileID: 1121122388}
+  - component: {fileID: 1121122385}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -3289,7 +3292,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Directions: {fileID: 1151123914}
   CurrentInteractable: {fileID: 1182223129}
-  levelNumber: 5
+  levelNumber: 7
+--- !u!65 &1121122385
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121122382}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.6626053, y: 2.7079582, z: 4.0174417}
+  m_Center: {x: 18.876259, y: 0.8539789, z: -4.6061187}
 --- !u!65 &1121122386
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3316,6 +3332,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.885653, y: 3.1680834, z: 0.8318796}
   m_Center: {x: 1.2247224, y: 1.084042, z: 2.9159398}
+--- !u!65 &1121122388
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121122382}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.9045715, y: 2.7487004, z: 6.9625154}
+  m_Center: {x: 11.337652, y: 0.8743504, z: 9.440672}
+--- !u!65 &1121122389
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121122382}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.320961, y: 3.5136442, z: 4.087166}
+  m_Center: {x: 17.741722, y: 1.2568223, z: 26.644432}
 --- !u!1001 &1126314755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5330,7 +5372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 340186182143657329, guid: 7f19f3ee7ffca4941b02c71f1e46eaca, type: 3}
       propertyPath: m_Name
-      value: Grab Frozen Creamer
+      value: Grab Creamer
       objectReference: {fileID: 0}
     - target: {fileID: 340186182143657332, guid: 7f19f3ee7ffca4941b02c71f1e46eaca, type: 3}
       propertyPath: cam
