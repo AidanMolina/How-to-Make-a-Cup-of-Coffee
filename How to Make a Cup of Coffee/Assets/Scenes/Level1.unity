@@ -3058,6 +3058,10 @@ PrefabInstance:
       propertyPath: m_Center.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 340186182143657323, guid: 7f19f3ee7ffca4941b02c71f1e46eaca, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 340186182143657328, guid: 7f19f3ee7ffca4941b02c71f1e46eaca, type: 3}
       propertyPath: m_Enabled
       value: 0
